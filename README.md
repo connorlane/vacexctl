@@ -1,5 +1,5 @@
-## Electrostatic Powder Feeder Controller ##
+## Vacuum Exchange Chamber Controller ##
 
-Control software for the electrostatic powder feeder
+Control software for the vacuume exchange chamber controller
 
 - Connor Coward <connor.coward@gmail.com> 2015
