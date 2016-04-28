@@ -2,10 +2,8 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-// DEBUG
-#include <printf.h>
-
-static const int _PRESCALER = 246;
+// If you change this value, be sure to change TCCR2B in TimerInterrupt_Stop()
+static const int _PRESCALER = 1024;
 
 static void (*_callback)() = 0;
 
@@ -45,8 +43,6 @@ void _TimerInterrupt_Init(int period_ms, void (*callback)())
 	else {
 		OCR2A = _countdown;
 	}
-
-	printf("OCR2A: %u", OCR2A);
 
 	// CTC Mode
 	TCCR2A |= (1 << WGM21);

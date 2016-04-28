@@ -7,9 +7,25 @@
 #define XON_CHAR 17
 #define XOFF_CHAR 19
 
-#define LED0 PB0
-#define LED0_PORT PORTB
-#define LED0_DDR DDRB
+#define BUTTON PC2
+#define BUTTON_PIN PINC
+#define BUTTON_DDR DDRC
+
+#define LED PB0
+#define LED_PORT PORTB
+#define LED_DDR DDRB
+
+//#define ARGON PD
+//#define ARGON_PORT PORT
+//#define ARGON_DDR DDR
+
+#define AIR PD0
+#define AIR_PORT PORTD
+#define AIR_DDR DDRD
+
+#define PUMP PD7
+#define PUMP_PORT PORTD
+#define PUMP_DDR DDRD
 
 #define TXEN PD2
 #define TXEN_PORT PORTD

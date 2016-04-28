@@ -27,5 +27,5 @@ erase:
 	avrdude -c$(programmerType) -p$(avrType) -P$(programmerDev) -e
 
 flash: $(BIN).hex
-	avrdude -B4 -c$(programmerType) -p$(avrType) -P$(programmerDev) -v -U flash:w:$<
+	avrdude -B10 -c$(programmerType) -p$(avrType) -P$(programmerDev) -v -U flash:w:$<
 
