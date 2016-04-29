@@ -1,7 +1,14 @@
 #ifndef PUMP_H
 #define PUMP_H
 
-void Pump_Init() {
+#ifndef PUMP_INITIALIZED
+#define PUMP_INITIALIZED
+#define Pump_Init() _Pump_Init()
+#else
+#define Pump_Init()
+#endif
+
+void _Pump_Init() {
 	// Set the led as output
 	PUMP_DDR |= (1 << PUMP);
 }
