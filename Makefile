@@ -1,5 +1,5 @@
-avrType=atmega328p
-avrFreq=20000000
+avrType=atmega328
+avrFreq=1000000
 programmerDev=usb
 programmerType=atmelice_isp
 BIN=esfeedercontroller
@@ -27,5 +27,5 @@ erase:
 	avrdude -c$(programmerType) -p$(avrType) -P$(programmerDev) -e
 
 flash: $(BIN).hex
-	avrdude -B10 -c$(programmerType) -p$(avrType) -P$(programmerDev) -v -U flash:w:$<
+	avrdude -B4 -c$(programmerType) -p$(avrType) -P$(programmerDev) -v -U flash:w:$<
 
