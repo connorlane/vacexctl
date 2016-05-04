@@ -2,18 +2,19 @@
 #define ARGON_H
 
 void Argon_Init() {
-	// Set the led as output
+	// Set the pin as output
 	ARGON_DDR |= (1 << ARGON);
 }
 
 void Argon_On() {
-	// Turn on LED
+	// Turn pin on
 	ARGON_PORT |= (1 << ARGON);
 }
 
 void Argon_Off() {
-	// Turn off LED
+	// Turn pin off
 	ARGON_PORT &= ~(1 << ARGON);
 }
 
 #endif
+
