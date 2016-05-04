@@ -13,6 +13,7 @@
 #include <air.h>
 #include <pressuresensor.h>
 #include <pressurefault.h>
+#include <utilities.h>
 
 int counter = 0;
 
@@ -54,10 +55,10 @@ int main(void)
 	//}
 
 	while (1) {
-		if (PressureFault_Triggered())
-			Argon_On();
-		else
-			Argon_Off();
+		DelayMS(3000);
+		Argon_On();
+		DelayMS(3000);
+		Argon_Off();
 	}
 }
 

@@ -24,22 +24,22 @@
 #define PRESSUREFAULT_DDR DDRC
 
 // Out #1
-#define AIR PD0
+#define AIR PD7
 #define AIR_PORT PORTD
 #define AIR_DDR DDRD
 
 // Out #2
-#define PUMP PD6
-#define PUMP_PORT PORTD
-#define PUMP_DDR DDRD
+#define PUMP PB0
+#define PUMP_PORT PORTB
+#define PUMP_DDR DDRB
 
 // Out #3
-#define ARGON PD7
+#define ARGON PD6
 #define ARGON_PORT PORTD
 #define ARGON_DDR DDRD
 
 // Out #4
-#define LED PB0
-#define LED_PORT PORTB
-#define LED_DDR DDRB
+#define LED PD0
+#define LED_PORT PORTD
+#define LED_DDR DDRD
 
